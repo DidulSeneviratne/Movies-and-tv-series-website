@@ -1,0 +1,33 @@
+h1{
+    text-align: center;
+    color: gold;
+    font-family: monospace;
+    text-transform: uppercase;
+}
+p{
+    color: gold;
+    font-family: monospace;
+    text-align: justify;  
+    font-size: 24px;
+}
+.main{
+    display: inline-flex;
+    width:100%;
+}
+.part1{
+    display: inline-flex;
+    width:50%;
+    
+}
+.part2{
+    display: inline-flex;
+    width:50%;
+}
+#baprofile {
+    display: inline-flex;
+    width:20%;
+    
+    
+}
+
+

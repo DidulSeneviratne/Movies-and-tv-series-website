@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title> Queries </title>
+        <link rel="stylesheet" href="../css/main.css">
+        <link rel="stylesheet" href="../css/navigation.css">
+        <link rel="stylesheet" href="../css/Contact-us.css">
+    </head>
+    <body>
+    <!--navigation bar-->
+        <div class="headest">
+            <header>
+			<nav>
+            <div class="header0">
+			        <div class="header1">
+                        <ul class="nav">
+                            <li> <a href="Home-page.html"> Home </a> </li>  
+                            <li> <a href="Gallery.html"> Gallery </a> </li>  
+                            <li> <a href="buymerch.html"> Buy-Merch </a> </li>  
+                            <li> <a href="Article.html"> Upcomings </a> </li>  
+                            <li> <a href="../CW Quiz/Quiz.html"> Quiz </a> </li>  
+                            <li> <a href="../Team/Team.html"> Members </a> </li>  
+                            <li> <a href="Sitemap.html"> Site-Map </a> </li>  
+                            <li> <a href="Contact-us.html"> Contact-Us </a> </li>  
+                        </ul>
+                    </div>
+                    <!--In here you can add the logo-->
+                    <div class="header2"> 
+                        <a href="Home-page.html"> <img src="../photos/logo.png" alt="logo" class="logo"> </a>
+                    </div>
+            </div>
+			</nav>
+		    </header>
+        </div>
+        <br/><br/>
+        <br/><br/>
+        <br/><br/>
+        <br/><br/>
+        <h1 class="h1"> Contact-Us </h1>
+        <!--query form hidden section(dispaly after click view button)-->
+        <div id="full">
+            <p class="detail">
+                <p> First-Name:
+                    <span id="first"></span>
+                </p><br/>
+                <p> Last-Name:
+                    <span id="last"></span>
+                </p><br/>
+                <p> E-mail:
+                    <span id="mail"></span>
+                </p><br/>
+                <p> Query-Type:
+                    <span id="tquery"></span>
+                </p><br/>
+                <p> Query-Detail:
+                    <span id="dquery"></span>
+                </p><br/>
+                <p class="panel">
+                <!--submit and edit buttons-->
+                <button type="submit" class="click" onclick="submit();"> <a href="Contact-us.html"> Submit </a> </button>
+                <button type="button" class="click" onclick="edit();"> Edit </button>
+                </p>
+        </div>
+        <div id="main1">
+        <!--the actuall query section started-->
+        <fieldset>
+            <legend> Query Form </legend>
+            <form method="post" action="mailto:dulsaradidul@gmail.com" name="query-form" id="query-form">
+                <label for="fname">First-Name:<br/>
+                    <input class="text" type="text" name="fname" id="fname" size="20" placeholder="First-Name">
+                </label>
+                <br/>
+                <label for="lname">Last-Name:<br/>
+                    <input class="text" type="text" name="lname" id="lname" size="20" placeholder="Last-Name">
+                </label>
+                <br/>
+                <label for="e-mail">E-mail:<br/>
+                    <input class="text" type="text" name="e-mail" id="e-mail" size="20" placeholder="Username@example.com">
+                </label>
+                <br/>
+                <label for="query-type"> Query-Type:
+                </label><br/>
+                <select class="text" id="query-type">
+                    <option value="" disabled class="placeholder" selected> Select-your-Subject </option>
+                    <option class="text" value="Shipping-issue"> Shipping-issue </option>
+                    <option class="text" value="Purchase-issue"> Purchase-issue </option>
+                    <option class="text" value="Tracking-issue"> Tracking-issue </option>
+                    <option class="text" value="Seller-issue"> Seller-issue </option>
+                </select>
+                <br/>
+                <label for="query-detail">Query-Detail:<br/>
+                    <textarea class="text" id="query-detail" name="query-detail" placeholder="Query-Details" rows="10" cols="50"></textarea>
+                </label>
+                <br/>
+                <!--view button-->
+                <p class="button2">
+                    <button type="button" class="click" onclick="view();" value="check">
+                        view
+                    </button>
+                </p>
+            </form>
+        </fieldset>
+        </div>
+        <!--footer section-->
+        <footer>
+            <p id="foot">
+                Developed by:- <a href="Student-02.html"> Didul Seneviratne </a><br/>
+                Copyrights@ reserved<br/>
+                30/07/2022
+            </p>
+        </footer>
+        <script src="../javascript/query.js"></script>
+    </body>
+</html>

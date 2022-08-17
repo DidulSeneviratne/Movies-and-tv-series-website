@@ -1,0 +1,37 @@
+/*query form label, textfield, textarea and button styling*/
+fieldset label{
+    font-family: monospace;
+    color: gold;
+    font-size: 16px;
+}
+.text{
+    font-family: monospace;
+    color: gold;
+    background-color: black;
+    font-size: 16px;
+    border-color: gold;
+    border-width: 2px;
+}
+/*The hidden part styling*/
+#full{
+    display: inline-flex;
+}
+.detail{
+    text-align: justify;
+}
+.panel{
+    text-align: right;
+}
+#full{
+    position: absolute;
+    width: 99%;
+    z-index: 10;
+    background: rgba(36, 35, 35, 0.1);
+    box-shadow: 0 25px 45px rgba(0, 0, 0, 0.1);
+    border: transparent;
+    -webkit-backdrop-filter: blur(25px);
+    backdrop-filter: blur(25px);
+    font-family: monospace;
+    color: gold;
+    font-size: 16px;
+}

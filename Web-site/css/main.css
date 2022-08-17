@@ -1,0 +1,409 @@
+/*main body heading, paragraph styling*/
+@import url('https://fonts.googleapis.com/css?family=Titillium+Web:400,600');
+body{
+    background-color: black;
+    padding: 2px;
+    font-family: monospace;
+}
+.h1{
+    text-align: center;
+    color: gold;
+    font-family: monospace;
+    text-transform: uppercase;
+}
+.h1 a{
+    text-decoration: none;
+    text-align: center;
+    color: gold;
+    font-family: monospace;
+    text-transform: uppercase;
+}
+.para{
+    font-family: monospace;
+    text-align: justify;
+    color: gold;
+    font-size: 24px;
+}
+/*button styling and animation*/
+.click {
+  font-family: monospace;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 600;
+  background-color: gold;
+  border-color: transparent;
+  color: black;
+}
+.click * {
+  box-sizing: border-box;
+  transition: all .35s ease;
+}
+.click {
+  display: inline-block;
+  list-style: outside none none;
+  margin: .5em 1em;
+  padding: 0;
+}
+.click{
+  padding: .3em .8em;
+  color: black;
+  position: relative;
+  text-decoration: none;
+  font-size: 18px;
+}
+.click::before,
+.click::after {
+  content: '';
+  height: 14px;
+  width: 14px;
+  position: absolute;
+  transition: all .35s ease;
+  opacity: 0;
+}
+.click::before {
+  content: '';
+  right: 0;
+  top: 0;
+  border-top: 3px solid black;
+  border-right: 3px solid black;
+  transform: translate(-100%, 50%);
+}
+.click:after {
+  content: '';
+  left: 0;
+  bottom: 0;
+  border-bottom: 3px solid black;
+  border-left: 3px solid black;
+  transform: translate(100%, -50%)
+}
+.click:hover:before,
+.click:hover:after{
+  transform: translate(0,0);
+  opacity: 1;
+}
+.click:hover {
+  color: black;
+}
+/*footer section student detail styling*/
+@import url('https://fonts.googleapis.com/css?family=Titillium+Web:400,600');
+p,dt,dd,dd a{
+    color:gold;
+    font-size: 24px;
+    text-decoration: none;
+    font-family: monospace;
+}
+dd a:hover{
+    text-decoration: underline;
+}
+legend{
+    color: gold;
+    font-size: 16px;
+    font-family: monospace;
+}
+fieldset{
+    border-color: gold;
+}
+body{
+    background-color: black;
+}
+.detail{
+    width: 75%;
+    display: inline-flex;
+    margin-left: 80px;
+}
+.image{
+    width: 22%;
+    display: inline-flex;
+    width: 251px;
+    height: 295px;
+    
+
+
+}
+.fieldset{
+    width: 100%;
+    height: 500px;
+    display: inline-flex;
+}
+/*big size moving heading animation and styling*/
+.line{
+    text-decoration: none;
+    color: gold;
+    font-size: 72px;
+    text-align: center;
+    font-family: monospace;
+}
+.content {
+  width: 100vw;
+  min-height: 10vh;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+}
+.text--content{
+  display: inline-flex;
+  width:25%;
+}
+.text {
+  position: relative;
+  font-size: 40px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  line-height: 100%;
+  color: gold;
+  align-items: center;
+  width: 50%;
+  display: inline-flex;
+}
+
+.text::before {
+  content: attr(data-msg);
+  filter: blur(3px);
+  align-items: center;
+}
+
+.text::after {
+  content: "";
+  position: absolute;
+  top: -4px;
+  left: 0;
+  width: 50px;
+  height: calc(100% + 4px);
+  border-top: 2px solid gold;
+  border-bottom: 2px solid gold;
+  animation: moveLeft 3s linear infinite alternate;
+  align-items: center;
+}
+.text--data {
+  animation: moveRight 3s linear infinite alternate;
+  text-align: center;
+  align-items: center;
+}
+
+@keyframes moveLeft {
+  0% {
+    transform: translateX(0px);
+  }
+
+  100% {
+    transform: translateX(300px);
+  }
+}
+
+@keyframes moveRight {
+  0% {
+    transform: translateX(0px);
+  }
+
+  100% {
+    transform: translateX(-300px);
+  }
+}
+/*button aligning*/
+p{
+    text-align: center;
+}
+button a{
+    text-decoration: none;
+    color: black;
+}
+.button2{
+    text-align: left;
+}
+.button1{
+    text-align: right;
+}
+/*footer styling*/
+footer{
+    background-color: gold;
+}
+#foot{
+    color: black;
+    font-family: monospace;
+    font-weight: 600;
+    font-size: 18px;
+    text-align: center;
+}
+footer a{
+    color: black;
+    text-decoration: none;
+}
+footer a:hover{
+    color: brown;
+    text-decoration: underline;
+}
+/* Styling the area of the slides main slideshow*/
+.slideshow {
+  overflow: hidden;
+  height: 800px;
+  width: 1280px;
+  margin: 0 auto;
+}
+ 
+/* Style each of the sides
+with a fixed width and height */
+.slide {
+  float: left;
+  height: 800px;
+  width: 1280px;
+}
+ 
+/* Add animation to the slides */
+.slide-wrapper {
+   
+/* Calculate the total width on the
+  basis of number of slides */
+  width: calc(1280px * 4);
+ 
+/* Specify the animation with the
+  duration and speed */
+  animation: slide 20s ease infinite;
+}
+ 
+/* Set the background color
+of each of the slides */
+.slide:nth-child(1) {
+  background-image: url(../photos/2022-top-gun-maverick-4k-5p-1280x800.jpg) ;
+}
+ 
+.slide:nth-child(2) {
+  background-image: url(../photos/2022-doctor-strange-in-the-multiverse-of-madness-5k-h4-1280x800.jpg);
+}
+ 
+.slide:nth-child(3) {
+  background-image: url(../photos/avatar-the-way-of-water-2-od-1280x800.jpg);
+}
+ 
+.slide:nth-child(4) {
+  background-image: url(../photos/spider-man-no-way-home-tragedy-be-1280x800.jpg);
+}
+/* Define the animation
+for the slideshow */
+@keyframes slide {
+   
+/* Calculate the margin-left for
+  each of the slides */
+  25% {
+    margin-left: 0px;
+  }
+ 
+  50% {
+    margin-left: calc(-1280px * 1);
+  }
+ 
+  75% {
+    margin-left: calc(-1280px * 2);
+  }
+ 
+  100% {
+    margin-left: calc(-1280px * 3);
+  }
+}
+
+/* Styling the area of the slides upcoming slideshow */
+.slideshow1 {
+  overflow: hidden;
+  height: 800px;
+  width: 1280px;
+  margin: 0 auto;
+}
+
+/* Style each of the sides
+with a fixed width and height */
+.slide1 {
+  float: left;
+  height: 800px;
+  width: 1280px;
+}
+
+.slide-wrapper1 {
+   
+  /* Calculate the total width on the
+    basis of number of slides */
+    width: calc(1280px * 4);
+   
+  /* Specify the animation with the
+    duration and speed */
+    animation: slide 20s ease infinite;
+  }
+
+.slide1:nth-child(1) {
+  background-image: url(../photos/black-adam.png);
+}
+ 
+.slide1:nth-child(2) {
+  background-image: url(../photos/lord-of-the-ring.jpg);
+}
+ 
+.slide1:nth-child(3) {
+  background-image: url(../photos/ponniyin.jpg);
+}
+ 
+.slide1:nth-child(4) {
+  background-image: url(../photos/she-hulk.jpg);
+}
+
+@keyframes slide1 {
+   
+  /* Calculate the margin-left for
+    each of the slides */
+    25% {
+      margin-left: 0px;
+    }
+   
+    50% {
+      margin-left: calc(-1280px * 1);
+    }
+   
+    75% {
+      margin-left: calc(-1280px * 2);
+    }
+   
+    100% {
+      margin-left: calc(-1280px * 3);
+    }
+}
+/*slideshow upside button*/
+.slide button , .slide1 button{
+  color: black;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(20px);
+  border-color: transparent;
+  align-items: center;
+  font-family: monospace;
+  color: gold;
+}
+.slide1 a{
+  text-decoration: none;
+  font-family: monospace;
+  color: gold;
+}
+/*buy-merch area styling*/
+#main{
+  width: 100%;
+  display: inline-flex;
+}
+#part1{
+  width:33%;
+  display: inline-flex;
+  padding: 60px;
+}
+#part2{
+  width:33%;
+  display: inline-flex;
+  padding: 60px;
+}
+#part3{
+  width:33%;
+  display: inline-flex;
+  padding: 60px;
+}
+#part1 img , #part2 img , #part3 img{
+  border: 10px solid gold;
+  transition: transform .2s;
+}
+#part1 img:hover, #part2 img:hover , #part3 img:hover{
+  transform: scale(1.25);
+}

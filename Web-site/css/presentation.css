@@ -1,0 +1,63 @@
+/* Imported Fonts */
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,400,700');
+@import url('https://fonts.googleapis.com/css?family=Titillium+Web:400,600');
+
+/* background image  */
+body {
+    background-image: url('../photos/1.jpg');
+    background-size: cover;
+}
+
+.logo {
+    width: 240px;
+    height: 100px;
+    margin-left: 1040px;
+    margin-top: 10px;
+}
+/* heading layout and color */
+/*h1 {
+    font-family: 'Titillium Web', cursive;  
+    font-size: 100px;
+    font-weight: lighter;
+    color: gold;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-right: 100px;
+    margin-left: 350px;
+}*/
+
+/* The desgin and colors of the text */
+#members {
+    font-family: 'Titillium Web', cursive;
+    font-size: 40px;
+    font-weight: bold;
+    border-color: black;
+    border-style: solid;
+    border-width: 1px;
+    color: black;
+    border-radius: 2px;
+    cursor: pointer;
+    padding-left: 20px;
+    padding-top: 7px;         
+    padding-right: 20px;
+    padding-bottom: 7px;
+    display: inline-block;
+    
+}
+.names {
+    font-family: 'Titillium Web', cursive;
+    font-size: 40px;
+    font-weight: bold;
+    /*border-color: black;
+    border-style: solid;
+    border-width: 1px;*/
+    color: black;
+   /* border-radius: 2px;*/
+    cursor: pointer;
+    /*padding-left: 20px;
+    padding-top: 7px;         
+    padding-right: 20px;
+    padding-bottom: 7px;*/
+    display: block;
+    
+}

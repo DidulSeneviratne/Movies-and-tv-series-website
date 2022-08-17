@@ -1,0 +1,674 @@
+/* Imported fonts */
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,400,700');
+@import url('https://fonts.googleapis.com/css?family=Titillium+Web:400,600');
+
+
+/* Page design and layout */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  font-family: 'Raleway';
+}
+
+/* Page color */
+body{
+  background: black;
+}
+
+/* --------------------- Header --------------------- */
+.header {
+  background-color: #222831;
+  min-height: 70px;
+  min-width: 100%;
+
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+
+.header-logo {
+  height: 60px;
+  cursor: pointer;
+
+  margin-top: 5px;
+  margin-left: 20px;
+  grid-column: 1/2;
+}
+
+.site-name {
+  grid-column: 2/3;
+  margin-top: 10px;
+  text-decoration: none;
+}
+
+#site-name {
+  font-family: "Metal Mania", sans-serif;
+  font-size: 20px;
+  color: #FFFFFF;
+  letter-spacing: 3px;
+}
+
+#site-name:hover {
+  color: #C1A57B;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+nav li,
+nav a {
+  font-family: "Metal Mania", sans-serif;
+  font-size: 22px;
+  color: #FFFFFF;
+  text-decoration: none;
+  letter-spacing: 3px;
+}
+
+.active-page {
+  border-bottom: 3px solid white;
+}
+
+.active-page:hover {
+  border-bottom: 3px solid #C1A57B;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+.header-nav {
+  grid-column: 11/12;
+
+  margin-top: 20px;
+  margin-right: 20px;
+}
+
+.header-nav-links-container {
+  list-style: none; /* removes default bullet points */
+
+  display: flex;
+  flex-direction: row;
+}
+
+.header-nav-links-container > li {
+  padding-left: 40px;
+}
+
+.header-nav-links-container > li:hover {
+  color: #C1A57B;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+.header-nav-link:hover {
+  color: #C1A57B;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+#feedbackButton {
+  grid-column: 12/12;
+}
+
+header button {
+  padding: 4px 15px;
+  margin-top: 17px;
+  margin-right: 20px;
+  width: 160px;
+
+  background-color: rgba(256, 256, 256, 1);
+  cursor: pointer;
+  font-family: "Metal Mania", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  color: #222831;
+  text-decoration: none;
+  border: none;
+  letter-spacing: 1px;
+
+  transition: all 0.3s ease 0s;
+}
+
+header button:hover {
+  background-color: #C1A57B;
+  color: black;
+
+  transition: all 0.3s ease 0s;
+}
+
+/* -------------------------------------------------- */
+
+/* -----------------------The form Layout and effects------------------- */
+.wrapper{
+  position: relative;
+  /*top: 50%;*/
+  left: 50%;
+  margin-top: 250px;
+  margin-bottom: -230px;
+  transform: translate(-50%,-50%);
+  max-width: 350px;
+  width: 100%;
+  background: #fff;
+  padding: 25px;
+  border-radius: 5px;
+  box-shadow: 4px 4px 2px rgba(254,236,164,1);
+}
+
+.wrapper h2{
+  text-align: center;
+  margin-bottom: 20px;
+  margin-top: 25px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  color: #332902;
+}
+/* ---------------------------------- */
+
+/* Form input field layout and colors */
+.wrapper .input_field{
+  margin-bottom: 10px;
+}
+
+.wrapper .input_field input[type="text"],
+.wrapper textarea{
+  border: 1px solid #e0e0e0;
+  width: 100%;
+  padding: 10px;
+  font-family: "Titillium Web"
+}
+
+.wrapper textarea{
+  resize: none;
+  height: 80px;
+  font-family: "Titillium Web"
+}
+
+/* submit button layout and colors */
+.wrapper .btn input[type="submit"]{
+  border: 0px;
+  margin-top: 15px;
+  padding: 10px;
+  text-align: center;
+  width: 100%;
+  background: #fece0c;
+  color: #332902;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-weight: bold;
+  border-radius: 25px;
+  cursor: pointer;
+}
+
+.Pmethod{
+  font-family: 'Raleway';
+}
+
+/* Error message(JS validation) layout desgin and color */
+#error_message{
+  margin-bottom: 20px;
+  background: #fe8b8e;
+  padding: 0px;
+  text-align: center;
+  font-size: 14px;
+  transition: all 0.5s ease;
+}
+
+/* ---------------------------------------  Footer  ------------------------------------------- */
+/*.footer {
+  position: relative;
+  background-color: #222831;
+  min-height: 200px;
+  min-width: 100%;
+  bottom: 0;
+
+
+  display: grid;
+  grid-template-columns: repeat(7, auto);
+  grid-template-rows: repeat(3, auto);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+
+.footer-logo {
+  grid-row: 1/4;
+  grid-column: 1/2;
+
+  height: 150px;
+  width: auto;
+  margin-top: 20px;
+}
+
+.footer-site-name {
+  grid-row: 1/4;
+  grid-column: 2/3;
+
+  margin-top: 50px;
+  text-decoration: none;
+}
+
+#footer-site-name {
+  font-family: "Metal Mania", serif;
+  letter-spacing: 2px;
+  font-size: 35px;
+  color: #FFFFFF;
+}
+
+#footer-site-name:hover {
+  color: #C1A57B;
+  transition: all 0.3s ease 0s;
+}
+
+.footer-signUp-text {
+  grid-row: 1/4;
+  grid-column: 3/4;
+  margin-top: 10px;
+  margin-left: 30px;
+  width: 70%;
+  max-width: 450px;
+
+  font-family: "Darker Grotesque", sans-serif;
+  letter-spacing: 2px;
+  font-size: 20px;
+  color: #FFFFFF;
+}
+
+#newsletterEmailTextField {
+  padding: 5px 8px;
+  margin-top: 10px;
+  width: 100%;
+  background-color: transparent;
+  border: 3px solid #FFFFFF;
+
+  font-family: "Darker Grotesque", sans-serif;
+  font-size: 25px;
+  color: #FFFFFF;
+}
+
+#newsletterEmailTextField:focus {
+  border: 3px solid #C1A57B;
+  outline: none;
+  color: #C1A57B;
+}
+
+#signUpBtnFooter {
+  padding: 5px 8px;
+  margin-top: 10px;
+  margin-bottom: 40px;
+  width: 100%;
+  background-color: #FFFFFF;
+
+  font-family: "Darker Grotesque", sans-serif;
+  font-weight: bolder;
+  font-size: 25px;
+  color: #000000;
+}
+
+#signUpBtnFooter:hover {
+  background-color: #C1A57B;
+  transition: all 0.3s ease 0s;
+}
+
+.footer-links {
+  grid-row: 1/4;
+  grid-column: 4/5;
+  margin-top: 20px;
+
+}
+
+.footer-links > a {
+  font-family: "Darker Grotesque", sans-serif;
+  font-size: 20px;
+  color: #FFFFFF;
+  text-decoration: none;
+  font-weight: bold;
+
+  margin-top: 8px;
+}
+
+.footer-links > a:hover {
+  color: #C1A57B;
+  transition: all 0.3s ease 0s;
+}
+
+.footer-editor {
+  grid-row: 1/4;
+  grid-column: 5/6;
+  margin-top: 50px;
+  margin-left: 30px;
+  margin-right: 30px;
+
+  font-family: "Darker Grotesque", sans-serif;
+  font-size: 25px;
+  color: #FFFFFF;
+  font-weight: bold;
+}
+
+.page-editor {
+  text-decoration: none;
+  font-family: "Darker Grotesque", sans-serif;
+  font-size: 28px;
+  color: #FFFFFF;
+}
+
+.page-editor:hover {
+  color: #C1A57B;
+  border-bottom: 2px solid #C1A57B;
+  transition: all 0.3s ease 0s;
+}*/
+/*footer section student detail styling*/
+@import url('https://fonts.googleapis.com/css?family=Titillium+Web:400,600');
+p,dt,dd,dd a{
+    color:gold;
+    font-size: 24px;
+    text-decoration: none;
+    font-family: monospace;
+}
+dd a:hover{
+    text-decoration: underline;
+}
+legend{
+    color: gold;
+    font-size: 16px;
+    font-family: monospace;
+}
+fieldset{
+    border-color: gold;
+}
+body{
+    background-color: black;
+}
+.detail{
+    width: 75%;
+    display: inline-flex;
+}
+.image{
+    width: 22%;
+    display: inline-flex;
+    width: 251px;
+    height: 295px;
+}
+.fieldset{
+    width: 100%;
+    height: 500px;
+    display: inline-flex;
+}
+/*big size moving heading animation and styling*/
+.line{
+    text-decoration: none;
+    color: gold;
+    font-size: 72px;
+    text-align: center;
+    font-family: monospace;
+}
+.content {
+  width: 100vw;
+  min-height: 10vh;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+}
+.text--content{
+  display: inline-flex;
+  width:25%;
+}
+.text {
+  position: relative;
+  font-size: 40px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  line-height: 100%;
+  color: gold;
+  align-items: center;
+  width: 50%;
+  display: inline-flex;
+}
+
+.text::before {
+  content: attr(data-msg);
+  filter: blur(3px);
+  align-items: center;
+}
+
+.text::after {
+  content: "";
+  position: absolute;
+  top: -4px;
+  left: 0;
+  width: 50px;
+  height: calc(100% + 4px);
+  border-top: 2px solid gold;
+  border-bottom: 2px solid gold;
+  animation: moveLeft 3s linear infinite alternate;
+  align-items: center;
+}
+.text--data {
+  animation: moveRight 3s linear infinite alternate;
+  text-align: center;
+  align-items: center;
+}
+
+@keyframes moveLeft {
+  0% {
+    transform: translateX(0px);
+  }
+
+  100% {
+    transform: translateX(300px);
+  }
+}
+
+@keyframes moveRight {
+  0% {
+    transform: translateX(0px);
+  }
+
+  100% {
+    transform: translateX(-300px);
+  }
+}
+/*button aligning*/
+p{
+    text-align: center;
+}
+button a{
+    text-decoration: none;
+    color: black;
+}
+.button2{
+    text-align: left;
+}
+.button1{
+    text-align: right;
+}
+/*footer styling*/
+footer{
+    background-color: gold;
+}
+#foot{
+    color: black;
+    font-family: monospace;
+    font-weight: 600;
+    font-size: 18px;
+    text-align: center;
+}
+footer a{
+    color: black;
+    text-decoration: none;
+}
+footer a:hover{
+    color: brown;
+    text-decoration: underline;
+}
+/* Styling the area of the slides main slideshow*/
+.slideshow {
+  overflow: hidden;
+  height: 800px;
+  width: 1280px;
+  margin: 0 auto;
+}
+ 
+/* Style each of the sides
+with a fixed width and height */
+.slide {
+  float: left;
+  height: 800px;
+  width: 1280px;
+}
+ 
+/* Add animation to the slides */
+.slide-wrapper {
+   
+/* Calculate the total width on the
+  basis of number of slides */
+  width: calc(1280px * 4);
+ 
+/* Specify the animation with the
+  duration and speed */
+  animation: slide 20s ease infinite;
+}
+ 
+/* Set the background color
+of each of the slides */
+.slide:nth-child(1) {
+  background-image: url(../photos/2022-top-gun-maverick-4k-5p-1280x800.jpg) ;
+}
+ 
+.slide:nth-child(2) {
+  background-image: url(../photos/2022-doctor-strange-in-the-multiverse-of-madness-5k-h4-1280x800.jpg);
+}
+ 
+.slide:nth-child(3) {
+  background-image: url(../photos/avatar-the-way-of-water-2-od-1280x800.jpg);
+}
+ 
+.slide:nth-child(4) {
+  background-image: url(../photos/spider-man-no-way-home-tragedy-be-1280x800.jpg);
+}
+/* Define the animation
+for the slideshow */
+@keyframes slide {
+   
+/* Calculate the margin-left for
+  each of the slides */
+  25% {
+    margin-left: 0px;
+  }
+ 
+  50% {
+    margin-left: calc(-1280px * 1);
+  }
+ 
+  75% {
+    margin-left: calc(-1280px * 2);
+  }
+ 
+  100% {
+    margin-left: calc(-1280px * 3);
+  }
+}
+
+/* Styling the area of the slides upcoming slideshow */
+.slideshow1 {
+  overflow: hidden;
+  height: 800px;
+  width: 1280px;
+  margin: 0 auto;
+}
+
+/* Style each of the sides
+with a fixed width and height */
+.slide1 {
+  float: left;
+  height: 800px;
+  width: 1280px;
+}
+
+.slide-wrapper1 {
+   
+  /* Calculate the total width on the
+    basis of number of slides */
+    width: calc(1280px * 4);
+   
+  /* Specify the animation with the
+    duration and speed */
+    animation: slide 20s ease infinite;
+  }
+
+.slide1:nth-child(1) {
+  background-image: url(../photos/black-adam.png);
+}
+ 
+.slide1:nth-child(2) {
+  background-image: url(../photos/lord-of-the-ring.jpg);
+}
+ 
+.slide1:nth-child(3) {
+  background-image: url(../photos/ponniyin.jpg);
+}
+ 
+.slide1:nth-child(4) {
+  background-image: url(../photos/she-hulk.jpg);
+}
+
+@keyframes slide1 {
+   
+  /* Calculate the margin-left for
+    each of the slides */
+    25% {
+      margin-left: 0px;
+    }
+   
+    50% {
+      margin-left: calc(-1280px * 1);
+    }
+   
+    75% {
+      margin-left: calc(-1280px * 2);
+    }
+   
+    100% {
+      margin-left: calc(-1280px * 3);
+    }
+}
+/*slideshow upside button*/
+.slide button , .slide1 button{
+  color: black;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(20px);
+  border-color: transparent;
+  align-items: center;
+  font-family: monospace;
+  color: gold;
+}
+.slide1 a{
+  text-decoration: none;
+  font-family: monospace;
+  color: gold;
+}
+/*buy-merch area styling*/
+#main{
+  width: 100%;
+  display: inline-flex;
+}
+#part1{
+  width:33%;
+  display: inline-flex;
+  padding: 60px;
+}
+#part2{
+  width:33%;
+  display: inline-flex;
+  padding: 60px;
+}
+#part3{
+  width:33%;
+  display: inline-flex;
+  padding: 60px;
+}
+#part1 img , #part2 img , #part3 img{
+  border: 10px solid gold;
+  transition: transform .2s;
+}
+#part1 img:hover, #part2 img:hover , #part3 img:hover{
+  transform: scale(1.25);
+}
+

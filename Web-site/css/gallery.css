@@ -1,0 +1,218 @@
+/*Importng Fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins";
+}
+/*Importng Fonts*/
+@import url('https://fonts.googleapis.com/css?family=Titillium+Web:400,600');
+body{
+    background-color: black;
+    padding: 2px;
+    font-family: monospace;
+}
+.heading {
+  color: gold;
+  text-align: center;
+  font-size: 2em;
+  margin: 2em 0;
+}
+/*Generating the grid*/
+.images {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1em;
+  margin: 0 1em;
+  
+}
+/*Formatting the images*/
+.images img {
+  width: 100%;
+  cursor: pointer;
+  transition: 0.3s all ease;
+}
+/*transition when hovering*/
+.images img:hover {
+  transform: scale(0.9);
+}
+/*Modal Popup*/
+.modalBox {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  overflow: auto;
+  opacity: 0;
+  pointer-events: none;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: #fff;
+  z-index: 1;
+    
+}
+
+/*Contentes of the Modal*/
+.ModalCon {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  
+    
+}
+/*Defining the modal image*/
+.ModalImage {
+  width: 80%;
+  max-width: 700px;
+    
+}
+/*formatting the text when popup*/
+.modalTxt {
+  margin-top: 1em;
+}
+/*formatting the close button*/
+.closeBtn {
+  position: absolute;
+  right: 1.5em;
+  font-size: 1.5em;
+  cursor: pointer;  
+  top: 1em;
+  
+}
+.modalBox.appear {
+  opacity: 1;
+  pointer-events: all;
+}
+/*making the opening popup window smooth by adding a little zoom effect*/
+.modalBox.appear .ModalImage,
+.modalBox.appear .modalTxt {
+    animation-name: zoom;
+  animation-duration: 0.6s;
+}
+/*Zoom Effect*/
+@keyframes zoom {
+  from {transform:scale(0)}
+  to {transform:scale(1)}
+}
+
+
+#background {
+    position: absolute;
+    right: 135em;
+    bottom: -10em;
+    
+    
+}
+/*Selection portion styling*/
+.selectDiv {
+	position: relative;
+	left: 500px;
+	bottom: 200px;
+}
+
+.drpDown1 {
+    position: relative;
+	font-size: 25px;
+    top: 950px;
+	font-family: Candara;
+	
+    
+}
+
+.selections{
+	position: relative;
+	right: 5px;
+}
+
+/*Background colour selection styling*/
+#changebg{
+	font-size: 30px;
+	text-align: center-left;
+}
+
+/*Text colour selection styling*/
+#changetxt{
+    position:relative;
+	font-size: 30px;
+	left: 0px;
+}
+
+#menudiv {
+    position: absolute;
+    padding-left:  18px;
+    bottom: -320px;
+    
+}
+
+
+
+#galtext {
+    font-size: 50px;
+}
+
+/*button style css*/
+.button {
+  background-color: #fff000;
+  border-radius: 12px;
+  color: #000;
+  cursor: pointer;
+  padding: 10px 15px;
+  text-align: center;
+  transition: 200ms;
+  margin-left: 20px;
+  font-weight: bold;
+  
+  
+  width: 30%;
+  box-sizing: border-box;
+  border: 0;
+  font-size: 16px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button:not(:disabled):hover,
+.button:not(:disabled):focus {
+  outline: 0;
+  background: #f4e603;
+  box-shadow: 0 0 0 2px rgba(0,0,0,.2), 0 3px 8px 0 rgba(0,0,0,.15);
+}
+
+.button:disabled {
+  filter: saturate(0.2) opacity(0.5);
+  -webkit-filter: saturate(0.2) opacity(0.5);
+  cursor: not-allowed;
+}
+
+
+/*text after the gallery title*/
+#paragraph {
+    left: 25px;
+    bottom: 500px;
+ 
+    font-size: 20px;
+}
+
+/*footer styling*/
+footer{
+    background-color: gold;
+}
+#foot{
+    color: black;
+    font-family: monospace;
+    font-weight: 600;
+    font-size: 18px;
+    text-align: center;
+}
+footer a{
+    color: black;
+    text-decoration: none;
+}
+footer a:hover{
+    color: brown;
+    text-decoration: underline;
+}

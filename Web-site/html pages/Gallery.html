@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title> Gallery </title>
+    
+     
+        
+        <link rel="stylesheet" href="../css/navigation.css">
+        <link rel="stylesheet" href="../css/gallery.css">
+    <body>
+        <!--Navigator bar with the website name and logo-->
+        <div class="headest">
+            <header>
+			<nav>
+            <div class="header0">
+			        <div class="header1">
+                        <ul class="nav">
+                            <li> <a href="Home-page.html"> Home </a> </li>  
+                            <li> <a href="Gallery.html"> Gallery </a> </li>  
+                            <li> <a href="buymerch.html"> Buy-Merch </a> </li>  
+                            <li> <a href="Article.html"> Upcomings </a> </li>  
+                            <li> <a href="../CW Quiz/Quiz.html"> Quiz </a> </li>  
+                            <li> <a href="../Team/Team.html"> Members </a> </li>  
+                            <li> <a href="Sitemap.html"> Site-Map </a> </li>  
+                            <li> <a href="Contact-us.html"> Contact-Us </a> </li>  
+                        </ul>
+                    </div>
+                    <!--In here you can add the logo-->
+                    <div class="header2"> 
+                        <a href="Home-page.html"> <img src="../photos/logo.png" alt="logo" class="logo"> </a>
+                    </div>
+            </div>
+			</nav>
+		    </header>
+        </div>
+            <div class="container">
+  <!--Header text and the paragraph-->
+  <div class="heading" id = "galtext">Gallery</div>
+  <p id="paragraph">A movie s a work of visual art that simulates experiences and otherwise communicates ideas, stories, perceptions, feelings, beauty, or atmosphere through the use of moving images. These images are generally accompanied by sound and, more rarely, other sensory stimulations. The word "cinema", short for cinematography, is often used to refer to filmmaking and the film industry, and to the art form that is the result of it. It has been estimated that there are approximately 500,000 movies (or, narrative fiction feature-length, theatrical-cinema films) currently in existence.</p>
+                
+  <!--Images for Modals-->
+  <div class="images">
+    <img src="../photos/gallery/Avatar2.jpg" 
+         alt="Avatar 2 is the sequel of Avatar(2009), and its going to be released on 16th December of 2022" />
+      <img src="../photos/gallery/lucifer.jpg" alt="Lucifer is Based on characters created by Neil Gaiman,this series follows Lucifer, the original fallen angel, who has become dissatisfied with his life in hell and retiring to Los Angeles" />
+    <img src="../photos/gallery/strangerthing.png" alt="Stranger Things is about 1980s Indiana, a group of young friends witness supernatural forces As they search for answers, the children unravel a series of extraordinary mysteries." />
+    <img src="../photos/gallery/nowayhome.jpg" alt="Spider-Man: No Way Home is a 2021 American superhero film based on the Marvel Comics character Spider-Man" />
+    <img src="../photos/gallery/minions.jpg" alt="Minions is about In the 1970s, young Gru tries to join a group of supervillains called the Vicious 6 after they oust their leader " />
+    
+  </div>
+                
+  <div class="modalBox">
+      <!--Close button-->
+    <span class="closeBtn"><i class="fas fa-times"></i></span>
+    <div class="ModalCon">
+      <img src="" class="ModalImage" />
+      <span class="modalTxt"></span>
+    </div>
+  </div>
+</div>
+<br/><br/>
+<br/><br/>
+<!--Importing an Icon pack from fontawesome-->
+<script src="https://kit.fontawesome.com/7368c40b21.js" crossorigin="anonymous" ></script>
+<script src="../javascript/gallery.js"></script>
+        </div>
+        
+        <br/><br/>
+        <br/><br/>
+        <br/><br/>
+        <br/><br/>
+        
+
+        
+  <!--The 2 dropdown menus to change the background color and the font color-->
+         <div id="menudiv">
+		
+		
+	     <div class="selection">
+            <select id="bgID">
+                <option value="" selected disabled hidden> --Select Background Color--</option>
+                <option class="red">Red</option>
+                <option class="orange">Orange</option>
+                <option class="green">LightGreen</option>
+                <option class="blue">SkyBlue</option>
+                <option class="black">Black</option>
+            </select>
+            <button class="button" onclick="colorbg()">Switch The Background</button>
+            <br>
+            <select name="SelectedColors" onchange="changetextColor(this)">
+                <option value="" selected disabled hidden> --Select Font Color--</option>
+                <option style="background-color:#EB1D36;" value="red">Red</option>
+                <option style="background-color:#011591;" value="blue">Dark Blue</option>
+                <option style="background-color:#800080;" value="purple">Purple</option>
+                <option style="background-color:#0c6101;" value="green">Dark Green</option>
+                <option style="background-color:#ffffff;" value="white">White</option>
+            </select>
+        </div>
+    </div>
+        <br/><br/>
+        <!--Footer-->
+        <footer>
+            <p id="foot">
+                Developed by:- <a href="Student-04.html"> Yasiru Ruwantha Weerakoon </a><br/>
+                Copyrights@ reserved<br/>
+                
+            </p>
+        </footer>
+        
+        
+      
+        
+</html>
